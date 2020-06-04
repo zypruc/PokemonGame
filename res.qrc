@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/materials">
+        <file>TDlogo.png</file>
+        <file>bgm.mp3</file>
+        <file>map.jpg</file>
+        <file>cursor.png</file>
+        <file>gengar.png</file>
+        <file>star.png</file>
+        <file>little_dragon.png</file>
+        <file>ui_cover.png</file>
+        <file>ui_element3.gif</file>
+        <file>ui_element1.png</file>
+        <file>ui_element2.gif</file>
+        <file>ui_element4.png</file>
+        <file>ui_Pika_run.png</file>
+        <file>fireball.png</file>
+        <file>heart.png</file>
+    </qresource>
+</RCC>
