@@ -1,18 +1,20 @@
-
 #ifndef DRAGONTOWER_H
 #define DRAGONTOWER_H
 
 #include "tower.h"
 #include <QTimer>
 
-class DragonTower: public Tower
+class DragonTower:public Tower
 {
     Q_OBJECT
-public:
-    DragonTower(QGraphicsItem* parent = 0);
-    void fire();
 public slots:
-    void aquire_target();
+    void getTarget();
+public:
+    DragonTower();
+    int getUpgradePrice() override;
+    void fire() override;
+    void upgrade() override;
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
+    void setImage() override;
 };
-
 #endif // DRAGONTOWER_H

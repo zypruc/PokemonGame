@@ -17,25 +17,51 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    dragon_tower.cpp \
     dragonicon.cpp \
-    enemy.cpp \
+    dragontower.cpp \
+    enemybase.cpp \
+    enemybat.cpp \
+    enemygengar.cpp \
+    enemygrassman.cpp \
+    enemykyogre.cpp \
+    enemymonkey.cpp \
+    enemyrockgod.cpp \
+    enemyrocksnake.cpp \
+    fishicon.cpp \
+    fishtower.cpp \
     flyer.cpp \
     game.cpp \
     health.cpp \
+    kabiicon.cpp \
+    kabitower.cpp \
     main.cpp \
     mainwindow.cpp \
+    pikaicon.cpp \
+    pikatower.cpp \
     score.cpp \
     tower.cpp
 
 HEADERS += \
-    dragon_tower.h \
     dragonicon.h \
-    enemy.h \
+    dragontower.h \
+    enemybase.h \
+    enemybat.h \
+    enemygengar.h \
+    enemygrassman.h \
+    enemykyogre.h \
+    enemymonkey.h \
+    enemyrockgod.h \
+    enemyrocksnake.h \
+    fishicon.h \
+    fishtower.h \
     flyer.h \
     game.h \
     health.h \
+    kabiicon.h \
+    kabitower.h \
     mainwindow.h \
+    pikaicon.h \
+    pikatower.h \
     score.h \
     tower.h
 
@@ -49,3 +75,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     res.qrc
+
+DISTFILES +=

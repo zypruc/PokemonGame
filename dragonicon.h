@@ -1,14 +1,14 @@
-#ifndef DRAGONTOWER_H
-#define DRAGONTOWER_H
+#ifndef DRAGONICON_H
+#define DRAGONICON_H
 
 #include <QGraphicsPixmapItem>
 #include <QGraphicsSceneMouseEvent>
-
-class dragonIcon:public QGraphicsPixmapItem
+class DragonIcon:public QGraphicsPixmapItem
 {
 public:
-    dragonIcon(QGraphicsItem * parent=0);
+    int PRICE;
+    DragonIcon(QGraphicsItem * parent=0);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
 };
 
-#endif // DRAGONTOWER_H
+#endif // DRAGONICON_H

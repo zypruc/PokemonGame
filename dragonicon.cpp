@@ -1,20 +1,24 @@
-/* dragonicon.cpp
- * 小火龙，仅仅用于建造
- */
-#include "game.h"
 #include "dragonicon.h"
-#include "dragon_tower.h"
+#include "game.h"
+#include "dragontower.h"
+#include <qdebug.h>
 
 extern Game * game;
-dragonIcon::dragonIcon(QGraphicsItem *p):QGraphicsPixmapItem(p)
+DragonIcon::DragonIcon(QGraphicsItem *p):QGraphicsPixmapItem(p)
 {
+    PRICE = 100;
     setPixmap(QPixmap(":/materials/little_dragon.png"));
 }
 
-void dragonIcon::mousePressEvent(QGraphicsSceneMouseEvent *e){
-    if (!game->building && game->score->score >=100){
-        game->score->decrease(100);
-        game->building = new Dragon_Tower();
-        game->setCursor(QString(":/materials/little_dragon.png"));
+void DragonIcon::mousePressEvent(QGraphicsSceneMouseEvent *e){
+    qDebug() << "DragonIcon MousePressEvent";
+    if (e->button() == Qt::LeftButton){
+        if (!game->building && game->score->getScore() >= PRICE) {
+            game->score->decrease(PRICE);
+            game->building = new DragonTower();
+            game->setCursor(QString(":/materials/little_dragon.png"));
+        }
+    }else{
+        QGraphicsPixmapItem::mousePressEvent(e);
     }
 }

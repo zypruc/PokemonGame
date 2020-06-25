@@ -16,9 +16,6 @@ MainWindow::~MainWindow()
 }
 void MainWindow::on_pushButton_clicked()
 {
-    //game = new Game();
-    //game->show();
-    //board = new GameBoard(this,5,100);
     game = new Game();
     game->show();
     this->setCentralWidget(game);

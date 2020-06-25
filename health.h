@@ -5,9 +5,10 @@
 class Health:public QGraphicsTextItem
 {
 public:
-    Health(QGraphicsItem * parent=0);
+    Health( int initHealth=10, QGraphicsItem * parent=0);
     void decrease();
-    int get_health();
+    int getHealth();
+    void setHealth(int initHealth){ health=initHealth; }
 private:
     int health;
 };

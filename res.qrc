@@ -1,7 +1,5 @@
 <RCC>
     <qresource prefix="/materials">
-        <file>TDlogo.png</file>
-        <file>bgm.mp3</file>
         <file>map.jpg</file>
         <file>cursor.png</file>
         <file>gengar.png</file>
@@ -15,5 +13,31 @@
         <file>ui_Pika_run.png</file>
         <file>fireball.png</file>
         <file>heart.png</file>
+        <file>monkey.png</file>
+        <file>pikachu.png</file>
+        <file>thunder.png</file>
+        <file>mid_dragon.png</file>
+        <file>mega_dragon.png</file>
+        <file>monkeyAngry.png</file>
+        <file>gengarParalyzed.png</file>
+        <file>bat.png</file>
+        <file>loseFlag.png</file>
+        <file>bgmRelax.mp3</file>
+        <file>Kyogre.png</file>
+        <file>bgmGod.mp3</file>
+        <file>bgmFight.mp3</file>
+        <file>RockSnake.png</file>
+        <file>energyball.png</file>
+        <file>Kabi.png</file>
+        <file>RockGod.png</file>
+        <file>GrassMan.png</file>
+        <file>GrassManBurn.png</file>
+        <file>bgmFight2.mp3</file>
+        <file>Jenny.png</file>
+        <file>Sudowood.png</file>
+        <file>DaidaiKing.png</file>
+        <file>Fish.png</file>
+        <file>FishDragon.png</file>
+        <file>waterAttack.png</file>
     </qresource>
 </RCC>
